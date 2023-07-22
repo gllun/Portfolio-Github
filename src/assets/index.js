@@ -38,10 +38,9 @@ import pauleluard from "./study/pauleluard.png";
 import ingetis from "./study/ingetis.png"; 
 import collegegc from "./study/collegegc.jpg";
 
-// import cv from "./aboutfile/CV_-_Gaël Luntala.pdf";
-// import plaquette_ingetis from "./aboutfile/Plaquette-ingetis.pdf";
-// import calendrier from "./aboutfile/Calendrier_paris_ESI_3_2022.pdf";
-// import websiteGraphcom from "./aboutfile/";
+import cv from "./aboutfile/CV_-_Gael_Luntala.pdf";
+import plaquette_ingetis from "./aboutfile/Plaquette-ingetis.pdf";
+import calendrier from "./aboutfile/Calendrier_paris_ESI_3_2022.pdf"; 
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -62,6 +61,7 @@ export {
   mobile,
   web,
   github, futura, frandroid,
+  cv, plaquette_ingetis, calendrier,
   menu,
   close,
   python,

@@ -7,33 +7,32 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const PDF_FILE_URL_PLAQINGE = 'http://localhost:5173/Plaquette-ingetis.pdf';
-const PDF_FILE_URL_CALINGE = 'http://localhost:5173/Calendrier_paris_ESI_3_2022.pdf';
-const PDF_FILE_URL_CV = 'http://localhost:5173/CV_-_Gaël_Luntala.pdf';
+// const PDF_FILE_URL_PLAQINGE = 'http://localhost:5173/Plaquette-ingetis.pdf';
+// const PDF_FILE_URL_CALINGE = 'http://localhost:5173/Calendrier_paris_ESI_3_2022.pdf';
+// const PDF_FILE_URL_CV = 'http://localhost:5173/CV_-_Gaël_Luntala.pdf';
 
-const ServiceCard = ({ index, title, icon }) => (
+const downloadFileAtURL = ({url}) => {
+  const fileName = url.split("/").pop();
+  const aTag = document.createElement("a");
+  aTag.href = url;
+  aTag.setAttribute("download", fileName);
+  document.body.appendChild(aTag);
+  aTag.click();
+  aTag.remove();
+};
+
+const ServiceCard = ({ index, title, icon, file }) => (
    <Tilt className='xs:w-[250px] w-full'>
     <motion.div
+      onClick={()=>{downloadFileAtURL(file)}}
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full yellow-blue-gradient p-[1px] rounded-[20px] shadow-card'
-    >
+      className='w-full yellow-blue-gradient p-[1px] rounded-[20px] shadow-card'>
       <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
+        options={{ max: 45, scale: 1, speed: 450, }}
+        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
         <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
+          src={icon} alt='web-development' className='w-16 h-16 object-contain' />
+        <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
       </div>
     </motion.div>
    </Tilt>
