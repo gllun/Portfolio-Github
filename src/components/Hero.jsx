@@ -19,13 +19,13 @@ const Hero = () => {
             Je suis <span className='text-[#617db6]'>Gaël</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Je developpe en Xamarin, gestion de <br className='sm:block hidden' />
-            restauration avec la caisse en alternance
+            Étant Développeur Informatique, <br className='sm:block hidden' />
+            je suis à la recherche d'une alternance
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

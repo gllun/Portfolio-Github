@@ -7,24 +7,22 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-// const PDF_FILE_URL_PLAQINGE = 'http://localhost:5173/Plaquette-ingetis.pdf';
-// const PDF_FILE_URL_CALINGE = 'http://localhost:5173/Calendrier_paris_ESI_3_2022.pdf';
-// const PDF_FILE_URL_CV = 'http://localhost:5173/CV_-_Gaël_Luntala.pdf';
+const onButtonClick = (file, name) => {
+  fetch(file).then(response => {
+      response.blob().then(blob => {
+          const fileURL = window.URL.createObjectURL(blob);
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = name;
+          alink.click();
+      })
+  })
+}
 
-const downloadFileAtURL = ({url}) => {
-  const fileName = url.split("/").pop();
-  const aTag = document.createElement("a");
-  aTag.href = url;
-  aTag.setAttribute("download", fileName);
-  document.body.appendChild(aTag);
-  aTag.click();
-  aTag.remove();
-};
-
-const ServiceCard = ({ index, title, icon, file }) => (
+const ServiceCard = ({ index, title, icon, file, filename }) => (
    <Tilt className='xs:w-[250px] w-full'>
     <motion.div
-      onClick={()=>{downloadFileAtURL(file)}}
+      onClick={() => onButtonClick(file, filename)}
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full yellow-blue-gradient p-[1px] rounded-[20px] shadow-card'>
       <div
@@ -50,9 +48,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-justify text-[17px] max-w-3xl leading-[30px]'
       >
-        Je suis un alternant en Bachelor Administrateur des Systèmes d’Informations dans l’école INGETIS à Paris 5ème arrondissement suivant un parcours DevOps. <br />
-        Étant en alternance dans l’entreprise GRAPHCOM à Levallois-Perret, je travaille sur le développement de la gestion de restaurants avec la caisse et le site web qui permet au restaurateur de prendre les commandes des clients, 
-        l’impression d’un ticket de caisse, voir ses statistiques journalières et mensuelles, …. L’application est développée en avec Xamarin et le site web avec ASP.NET Blazor.<br />
+        Ayant obtenu mon Bachelor « Administrateur des Systèmes d’Administration » en suivant le parcours DevOps, je souhaite poursuivre l’aventure en Mastère « dev, Data & IA » avec comme le parcours « Développement & Big Data ». <br/>
+        Mon alternance dans l’entreprise GRAPHCOM à Levallois-Perret où je travaille sur le développement de la gestion de restaurants avec la caisse et le site web qui permet au restaurateur de prendre les commandes des clients, l’impression d’un ticket de caisse, voir ses statistiques journalières et mensuelles, …. L’application est développée en c# et le site web avec ASP.NET Blazor. <br/>
+        Ma rigueur et mon sens de l’analyse sont des qualités appréciables lors de mes activités. J’ai également le sens du service et la capacité de m’adapter aisément. Mes expériences m’ont permis de développer mes compétences en programmation et système informatique afin d’avoir cette double casquette. <br/>
         Je m'investis pleinement dans mon parcours et mets en pratique mes compétences. Je suis enthousiaste à l'idée de continuer à développer mes connaissances et à relever de nouveaux défis passionnants dans le monde de l'informatique.
       </motion.p>
 

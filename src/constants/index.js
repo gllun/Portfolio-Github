@@ -1,6 +1,6 @@
 import {
     mobile,
-    cv, plaquette_ingetis, calendrier,
+    cv, brochure, calendrier,
     axa,grdf,isabelmarant, graphcom, pierrefitte,
     backend, creator, web,
     javascript,
@@ -8,16 +8,13 @@ import {
     css,
     redux,
     figma,
-    carrent,
-    jobit,
-    tripguide,
-    sql, reactjs, tailwind, nodejs, git, threejs,
-    pauleluard, ingetis, collegegc,
+    sql, reactjs, tailwind, nodejs, git, cherch, threejs,
+    pauleluard, ingetis, collegegc, ipssi,
     python, aspnetcore, laravel, csharp, blazor, xamarin, syncfusion,
     pythontkinter, laravelreactnative,
-    csharpwindowsform,
+    csharpwindowsform, saccherch,
     xamaringraphcom, blazorgraphcom, builderjava, deepLearning,
-    futura, frandroid,
+    futura, frandroid, github,
   } from "../assets";
   
   export const navLinks = [
@@ -38,28 +35,28 @@ import {
   const services = [
     {
       title: "Curriculum Vitae",
-      file: 'http://localhost:5173/CV_-_Gaël_Luntala.pdf',
-      filename: 'CV_Gael_Luntala',
+      file: cv,
+      filename: 'CV - Gael Luntala',
       icon: web,
     },
+    // {
+    //   title: "Calendrier Alternant",
+    //   file: calendrier,
+    //   filename: 'Calendrier 2023-2024',
+    //   icon: mobile,
+    // },
     {
-      title: "Calendrier Alternant",
-      file: 'http://localhost:5173/Calendrier_paris_ESI_3_2022.pdf',
-      filename: 'Calendrier_Ingetis',
-      icon: mobile,
-    },
-    {
-      title: "Brochure Ingetis",
-      file: 'http://localhost:5173/Plaquette-ingetis.pdf',
-      filename: 'Brochure_Ingetis',
+      title: "Brochure École IPSSI",
+      file: brochure,
+      filename: 'Brochure IPSSI',
       icon: backend,
     },
-    {
-      title: "GRAPHCOM",
-      file: 'https://www.graphcom.fr/',
-      filename: 'Graphcom',
-      icon: creator,
-    },
+    // {
+    //   title: "GRAPHCOM",
+    //   file: 'https://www.graphcom.fr/',
+    //   filename: 'Graphcom',
+    //   icon: creator,
+    // },
   ];
   
   const technologies = [
@@ -203,7 +200,7 @@ import {
       company_name: "GRAPHCOM - Contrat d'apprentissage",
       icon: graphcom,
       iconBg: "#E6DEDD",
-      date: "Dec 2019 - Aoû 2023",
+      date: "Dec 2022 - Aoû 2023",
       points: [
         "Développement d'une application mobile multiplateforme",
         "Intégration avec des services et API externe ",
@@ -249,10 +246,20 @@ import {
       ville: "Paris 5ème Arr.",
       diplome: "Bachelor Administrateur des Systèmes d’Information",
       option: "Parcours DevOps",
-      obtenu: "Date de délivrance: En cours ...",
+      obtenu: "Date de délivrance: Juillet 2023",
       icon: ingetis,
       iconBg: "#FFFFFF",
       date: "Sept 2022 - Juil 2023",
+    },
+    {
+      title: "Ecole informatique IPSSI",
+      ville: "Paris 12ème Arr.",
+      diplome: "Mastère dev, Data & IA",
+      option: "Parcours Développement & Big Data",
+      obtenu: "Date de délivrance: En cours ...",
+      icon: ipssi,
+      iconBg: "#FFFFFF",
+      date: "Oct 2023 - Sept 2025",
     },
   ];
 
@@ -355,6 +362,7 @@ import {
         },
       ],
       image: pythontkinter,
+      img_logo: github,
       source_code_link: "https://github.com/gllun/gestion_bien_immobilier",
     },
     {
@@ -376,6 +384,7 @@ import {
         },
       ],
       image: laravelreactnative,
+      img_logo: github,
       source_code_link: "https://github.com/",
     },
     {
@@ -397,6 +406,7 @@ import {
         },
       ],
       image: xamaringraphcom,
+      img_logo: github,
       source_code_link: "https://github.com/",
     },
     // {
@@ -469,6 +479,7 @@ import {
         },
       ],
       image: blazorgraphcom,
+      img_logo: github,
       source_code_link: "https://github.com/",
     },
     {
@@ -490,6 +501,7 @@ import {
         },
       ],
       image: builderjava,
+      img_logo: github,
       source_code_link: "https://github.com/",
     },
     {
@@ -511,29 +523,31 @@ import {
         },
       ],
       image: deepLearning,
+      img_logo: github,
       source_code_link: "https://github.com/Azrogue/hate_speech_check",
     },
-    // {
-    //   name: "Xamarin - Graphcom",
-    //   description:
-    //     "Etant alternant dans la societe GRAPHCOM, nous développons une application pour les restaurateurs qui leur permet permet de prendre les commandes clients avec ticket de caisse.",
-    //   tags: [
-    //     {
-    //       name: "Xamarin",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "MsSQLServer",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "SignalR",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: xamaringraphcom,
-    //   source_code_link: "https://github.com/",
-    // },
+    {
+      name: "CHERCH.™ (WordPress)",
+      description:
+        "Création d'un Site Web E-Commerce avec l'extension open source WooCommerce pour un client qui souhaite développe sa gamme de sacs de la marque Cherch.™ fabriqué à la main en utilisant de la pellote.",
+      tags: [
+        {
+          name: "Elementor",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Photoshop",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Illustrator",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: saccherch,
+      img_logo: cherch,
+      source_code_link: "https://cherchandco.fr/",
+    },
   ];
   
   export { services, technologies, experiences, study, testimonials, projects };

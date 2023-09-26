@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import cherch from "./cherch.svg";
 import futura from "./futura.png";
 import frandroid from "./frandroid.png";
 import menu from "./menu.svg";
@@ -36,15 +37,13 @@ import pierrefitte from "./company/pierrefitte.png";
 
 import pauleluard from "./study/pauleluard.png";
 import ingetis from "./study/ingetis.png"; 
+import ipssi from "./study/ipssi.png";
 import collegegc from "./study/collegegc.jpg";
 
-import cv from "./aboutfile/CV_-_Gael_Luntala.pdf";
-import plaquette_ingetis from "./aboutfile/Plaquette-ingetis.pdf";
-import calendrier from "./aboutfile/Calendrier_paris_ESI_3_2022.pdf"; 
+import cv from "./aboutfile/CV_Gael_Luntala.pdf";
+import brochure from "./aboutfile/brochure_ipssi.pdf";
+import calendrier from "./aboutfile/Calendrier.pdf"; 
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import blazorgraphcom from "./blazorgraphcom.png";
 import builderjava from "./builderjava.png";
 import deepLearning from "./deepLearning.png";
@@ -52,23 +51,24 @@ import pythontkinter from "./pythontkinter.png";
 import xamaringraphcom from "./xamaringraphcom.png";
 import laravelreactnative from "./laravelreactnative.png";
 import csharpwindowsform from "./csharpwindowsform.png";
+import saccherch from "./sac_cherch.jpg";
 
 export {
-  laravelreactnative, xamaringraphcom, pythontkinter, deepLearning, builderjava, blazorgraphcom, csharpwindowsform,
+  laravelreactnative, xamaringraphcom, pythontkinter, deepLearning, builderjava, blazorgraphcom, csharpwindowsform, saccherch,
   leg_white,
   backend,
   creator,
   mobile,
   web,
   github, futura, frandroid,
-  cv, plaquette_ingetis, calendrier,
+  cv, brochure, calendrier,
   menu,
   close,
   python,
   css,
   figma,
   csharp,
-  git,
+  git, cherch,
   html,
   blazor,
   javascript,
@@ -87,8 +87,5 @@ export {
   isabelmarant,
   grdf,
   graphcom,
-  pauleluard, ingetis, collegegc,
-  carrent,
-  jobit,
-  tripguide,
+  pauleluard, ingetis, collegegc,ipssi
 };
