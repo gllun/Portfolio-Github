@@ -49,7 +49,7 @@ const About = () => {
         className='mt-4 text-secondary text-justify text-[17px] max-w-3xl leading-[30px]'
       >
         Ayant obtenu mon Bachelor « Administrateur des Systèmes d’Administration » en suivant le parcours DevOps, je souhaite poursuivre l’aventure en Mastère « dev, Data & IA » avec comme le parcours « Développement & Big Data ». <br/>
-        Mon alternance dans l’entreprise GRAPHCOM à Levallois-Perret où je travaille sur le développement de la gestion de restaurants avec la caisse et le site web qui permet au restaurateur de prendre les commandes des clients, l’impression d’un ticket de caisse, voir ses statistiques journalières et mensuelles, …. L’application est développée en c# et le site web avec ASP.NET Blazor. <br/>
+        Mon alternance dans l’entreprise GRAPHCOM à Levallois-Perret où j'avais travaillé sur le développement de la gestion de restaurants avec la caisse et le site web qui permet au restaurateur de voir ses statistiques journalières et mensuelles. L’application est développée en C# et le site web avec ASP.NET Blazor. <br/>
         Ma rigueur et mon sens de l’analyse sont des qualités appréciables lors de mes activités. J’ai également le sens du service et la capacité de m’adapter aisément. Mes expériences m’ont permis de développer mes compétences en programmation et système informatique afin d’avoir cette double casquette. <br/>
         Je m'investis pleinement dans mon parcours et mets en pratique mes compétences. Je suis enthousiaste à l'idée de continuer à développer mes connaissances et à relever de nouveaux défis passionnants dans le monde de l'informatique.
       </motion.p>

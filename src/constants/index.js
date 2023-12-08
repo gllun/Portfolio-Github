@@ -14,7 +14,7 @@ import {
     pythontkinter, laravelreactnative,
     csharpwindowsform, saccherch,
     xamaringraphcom, blazorgraphcom, builderjava, deepLearning,
-    futura, frandroid, github,
+    futura, frandroid, github, graphcom_v, graphcom_b,
   } from "../assets";
   
   export const navLinks = [
@@ -196,7 +196,7 @@ import {
       ],
     },
     {
-      title: "Developpeur Xamarin",
+      title: "Developpeur C#",
       company_name: "GRAPHCOM - Contrat d'apprentissage",
       icon: graphcom,
       iconBg: "#E6DEDD",
@@ -205,7 +205,7 @@ import {
         "Développement d'une application mobile multiplateforme",
         "Intégration avec des services et API externe ",
         "Débogage et tests",
-        "Dévelopement d'une interface web avec ASP.NET Core Blazor",
+        "Développement d'une application web avec ASP.NET Core Blazor",
       ],
     },
   ];
@@ -259,7 +259,7 @@ import {
       obtenu: "Date de délivrance: En cours ...",
       icon: ipssi,
       iconBg: "#FFFFFF",
-      date: "Oct 2023 - Sept 2025",
+      date: "Dec 2023 - Nov 2025",
     },
   ];
 
@@ -388,7 +388,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Xamarin - Graphcom",
+      name: "C# - Graphcom",
       description:
         "Etant alternant dans la societe GRAPHCOM, nous développons une application pour les restaurateurs qui leur permet de prendre les commandes clients avec ticket de caisse.",
       tags: [
@@ -406,8 +406,8 @@ import {
         },
       ],
       image: xamaringraphcom,
-      img_logo: github,
-      source_code_link: "https://github.com/",
+      img_logo: graphcom_b,
+      source_code_link: "https://www.graphcom.fr/menu-board-dynamique-communication",
     },
     // {
     //   name: "Portfolio",
@@ -479,8 +479,8 @@ import {
         },
       ],
       image: blazorgraphcom,
-      img_logo: github,
-      source_code_link: "https://github.com/",
+      img_logo: graphcom_v,
+      source_code_link: "https://dash.alta-pos.fr/login",
     },
     {
       name: "Gestion des notes de frais",
@@ -507,7 +507,7 @@ import {
     {
       name: "Hate Cheek",
       description:
-        "Ce projet Deep Learning consiste a apprendre à notre robot d'analyser la phrase ecrite et de la qualifier comme phrase positive ou negative. Si la phrase est négative, alors elle est classé par catégorie. ",
+        "Ce projet Deep Learning consiste a apprendre à notre robot d'analyser la phrase écrite et de la qualifier désagréable ou non. Si la phrase est grossier, alors elle retourne un message negative. ",
       tags: [
         {
           name: "Python",

@@ -33,6 +33,8 @@ import axa from "./company/axa.png";
 import grdf from "./company/grdf.png";
 import isabelmarant from "./company/IsabelMarant.png";
 import graphcom from "./company/graphcom.png";
+import graphcom_v from "./company/graphcom_v.png";
+import graphcom_b from "./company/graphcom_b.png";
 import pierrefitte from "./company/pierrefitte.png";
 
 import pauleluard from "./study/pauleluard.png";
@@ -86,6 +88,6 @@ export {
   pierrefitte,
   isabelmarant,
   grdf,
-  graphcom,
+  graphcom, graphcom_v, graphcom_b,
   pauleluard, ingetis, collegegc,ipssi
 };
