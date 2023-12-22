@@ -38,12 +38,11 @@ import graphcom_b from "./company/graphcom_b.png";
 import pierrefitte from "./company/pierrefitte.png";
 
 import pauleluard from "./study/pauleluard.png";
-import ingetis from "./study/ingetis.png"; 
-import ipssi from "./study/ipssi.png";
+import ingetis from "./study/ingetis.png";
 import collegegc from "./study/collegegc.jpg";
 
 import cv from "./aboutfile/CV_Gael_Luntala.pdf";
-import brochure from "./aboutfile/brochure_ipssi.pdf";
+import brochure from "./aboutfile/brochure.pdf";
 import calendrier from "./aboutfile/Calendrier.pdf"; 
 
 import blazorgraphcom from "./blazorgraphcom.png";
@@ -89,5 +88,5 @@ export {
   isabelmarant,
   grdf,
   graphcom, graphcom_v, graphcom_b,
-  pauleluard, ingetis, collegegc,ipssi
+  pauleluard, ingetis, collegegc
 };

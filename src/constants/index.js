@@ -9,7 +9,7 @@ import {
     redux,
     figma,
     sql, reactjs, tailwind, nodejs, git, cherch, threejs,
-    pauleluard, ingetis, collegegc, ipssi,
+    pauleluard, ingetis, collegegc,
     python, aspnetcore, laravel, csharp, blazor, xamarin, syncfusion,
     pythontkinter, laravelreactnative,
     csharpwindowsform, saccherch,
@@ -46,9 +46,9 @@ import {
     //   icon: mobile,
     // },
     {
-      title: "Brochure École IPSSI",
+      title: "Brochure École INGETIS",
       file: brochure,
-      filename: 'Brochure IPSSI',
+      filename: 'Brochure INGETIS',
       icon: backend,
     },
     // {
@@ -232,7 +232,7 @@ import {
       date: "Sept 2015 - Juil 2017",
     },
     {
-      title: "Ecole informatique Ingetis",
+      title: "Ecole informatique INGETIS",
       ville: "Paris 5ème Arr.",
       diplome: "BTS Services Informatiques aux Organisations (SIO)",
       option: "Solutions Logicielles et Applications Métiers (SLAM)",
@@ -242,7 +242,7 @@ import {
       date: "Sept 2018 - Juil 2020",
     },
     {
-      title: "Ecole informatique Ingetis",
+      title: "Ecole informatique INGETIS",
       ville: "Paris 5ème Arr.",
       diplome: "Bachelor Administrateur des Systèmes d’Information",
       option: "Parcours DevOps",
@@ -252,14 +252,14 @@ import {
       date: "Sept 2022 - Juil 2023",
     },
     {
-      title: "Ecole informatique IPSSI",
-      ville: "Paris 12ème Arr.",
-      diplome: "Mastère dev, Data & IA",
-      option: "Parcours Développement & Big Data",
+      title: "Ecole informatique INGETIS",
+      ville: "Paris 5ème Arr.",
+      diplome: "MBA Expert en Système Informatique",
+      option: "DevOps",
       obtenu: "Date de délivrance: En cours ...",
-      icon: ipssi,
+      icon: ingetis,
       iconBg: "#FFFFFF",
-      date: "Dec 2023 - Nov 2025",
+      date: "Sept 2023 - Juil 2025",
     },
   ];
 
